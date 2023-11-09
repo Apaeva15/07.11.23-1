@@ -1,16 +1,22 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import headerData from "./headerData";
 import "./Header.css";
 
 const Header = () => {
   return (
     <header>
-      <div className="left-section">{}Logo</div>
+      <div className="left-section">Logo</div>
       <div className="right-section">
         {headerData.map((item, index) => (
-          <button key={index} onClick={() => console.log(item.link)}>
+          <NavLink
+            key={index}
+            to={item.link}
+            activeClassName="active"
+            className="NavLink"
+          >
             {item.name}
-          </button>
+          </NavLink>
         ))}
       </div>
     </header>

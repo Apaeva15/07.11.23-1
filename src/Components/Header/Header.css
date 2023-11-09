@@ -9,5 +9,9 @@ header {
 }
 .right-section {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+}
+.NavLink {
+  text-decoration: none;
+  color: black;
 }

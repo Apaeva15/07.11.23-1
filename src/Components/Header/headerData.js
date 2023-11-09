@@ -1,7 +1,7 @@
 const headerData = [
-  { name: "Home", link: "/home" },
-  { name: "About", link: "/about" },
-  { name: "Contact", link: "/contact" }
+  { name: "Main", link: "/main" },
+  { name: "Catalog", link: "/catalog" },
+  { name: "Product", link: "/product" }
 ];
 
 export default headerData;
